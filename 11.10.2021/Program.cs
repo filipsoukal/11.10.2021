@@ -10,8 +10,23 @@ namespace _11._10._2021
     {
         static void Main(string[] args)
         {
-            ToUpperCasenew toUpperCasenew = new ToUpperCasenew();
+            //ToUpperCasenew toUpperCasenew = new ToUpperCasenew();
+            StringBuilderTest stringBuilderTest = new StringBuilderTest();
         }
+    }
+    class StringBuilderTest
+    {
+        public StringBuilderTest()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 20000000; i++)
+            {
+                sb.Append(i);
+            }
+            Console.WriteLine(sb);
+            Console.ReadLine();
+        }
+
     }
     class ToUpperCasenew
     {
